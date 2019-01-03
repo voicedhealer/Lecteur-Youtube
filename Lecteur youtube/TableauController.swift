@@ -12,7 +12,8 @@ class TableauController: UIViewController, UITableViewDelegate, UITableViewDataS
     @IBOutlet weak var tableView: UITableView!
     
     var chansons = [Chanson]()
-    let identifantCell = "ChansonCell"
+    let identifiantCell = "ChansonCell"
+    let identifiantSegue = "VersVideo"
     
     
     
@@ -30,7 +31,7 @@ class TableauController: UIViewController, UITableViewDelegate, UITableViewDataS
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let chanson = chansons[indexPath.row]
-        if let cell = tableView.dequeueReusableCell(withIdentifier: identifantCell) as? ChansonCell {
+        if let cell = tableView.dequeueReusableCell(withIdentifier: identifiantCell) as? ChansonCell {
             cell.creerCell(chanson)
             return cell
         }
@@ -43,6 +44,20 @@ class TableauController: UIViewController, UITableViewDelegate, UITableViewDataS
         return 130
         
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let chanson = chansons[indexPath.row]
+        performSegue(withIdentifier: identifiantSegue, sender: chanson)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == identifiantSegue {
+            if let nouveauController = segue.destination as? VideoController {
+                nouveauController.chanson = sender as? Chanson
+            }
+        }
+    }
+    
     func ajouterChanson() {
     chansons = [Chanson]()
         let cash = Chanson(artiste: "Cordux et Voice", titre: "Cash'n Guns", code: "byVoymKz4E4&t")

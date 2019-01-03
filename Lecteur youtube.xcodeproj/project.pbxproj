@@ -14,6 +14,7 @@
 		1E0FC66221D90BC500F59326 /* TableauController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0FC66121D90BC500F59326 /* TableauController.swift */; };
 		1E0FC66421D90F6E00F59326 /* Chanson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0FC66321D90F6D00F59326 /* Chanson.swift */; };
 		1E0FC66621DA7CE800F59326 /* ChansonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0FC66521DA7CE800F59326 /* ChansonCell.swift */; };
+		1E0FC66821DE254000F59326 /* VideoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0FC66721DE254000F59326 /* VideoController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		1E0FC66121D90BC500F59326 /* TableauController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableauController.swift; sourceTree = "<group>"; };
 		1E0FC66321D90F6D00F59326 /* Chanson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Chanson.swift; sourceTree = SOURCE_ROOT; };
 		1E0FC66521DA7CE800F59326 /* ChansonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChansonCell.swift; sourceTree = "<group>"; };
+		1E0FC66721DE254000F59326 /* VideoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				1E0FC65821D901F500F59326 /* LaunchScreen.storyboard */,
 				1E0FC65B21D901F500F59326 /* Info.plist */,
 				1E0FC66521DA7CE800F59326 /* ChansonCell.swift */,
+				1E0FC66721DE254000F59326 /* VideoController.swift */,
 			);
 			path = "Lecteur youtube";
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E0FC66821DE254000F59326 /* VideoController.swift in Sources */,
 				1E0FC66221D90BC500F59326 /* TableauController.swift in Sources */,
 				1E0FC65021D901F100F59326 /* AppDelegate.swift in Sources */,
 				1E0FC66621DA7CE800F59326 /* ChansonCell.swift in Sources */,
