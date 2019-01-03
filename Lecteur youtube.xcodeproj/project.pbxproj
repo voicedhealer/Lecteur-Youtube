@@ -42,7 +42,6 @@
 		1E0FC64321D901F000F59326 = {
 			isa = PBXGroup;
 			children = (
-				1E0FC66121D90BC500F59326 /* TableauController.swift */,
 				1E0FC64E21D901F100F59326 /* Lecteur youtube */,
 				1E0FC64D21D901F100F59326 /* Products */,
 			);
@@ -60,6 +59,7 @@
 			isa = PBXGroup;
 			children = (
 				1E0FC64F21D901F100F59326 /* AppDelegate.swift */,
+				1E0FC66121D90BC500F59326 /* TableauController.swift */,
 				1E0FC65321D901F100F59326 /* Main.storyboard */,
 				1E0FC65621D901F500F59326 /* Assets.xcassets */,
 				1E0FC66321D90F6D00F59326 /* Chanson.swift */,
